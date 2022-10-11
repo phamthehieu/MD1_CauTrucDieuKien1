@@ -7,20 +7,21 @@
 <body>
 <script>
     let userName = prompt("Who is there?", '')
-    if (userName == 'admin') {
+    if (userName === 'admin') {
         let pass = prompt("Passwword?", '')
-        if (pass == 'TheMaster') {
+        if (pass === 'TheMaster') {
             alert('welcome!')
-        } else if (pass == null) {
+        } else if (pass === '') {
             alert('Canceled')
         } else {
-            alert('wrong password');
+            alert('wrong password')
         }
-    } else if (userName == null) {
+    } else if (userName == '') {
         alert('Canceled')
     } else {
         alert('I don not know you')
     }
+
 </script>
 </body>
 </html>

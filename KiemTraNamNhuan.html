@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Năm Nhuận</title>
+</head>
+<body>
+<script>
+ let year = parseInt(prompt("Nhập năm"));
+ let namnhuan =  false;
+ let namnhuan4 = year % 4 == 0;
+ if (namnhuan4) {
+     let namnhuan100 = year % 100 == 0;
+     if (namnhuan100) {
+         let namnhuan400 = year % 400 == 0;
+         if (namnhuan400) {
+             namnhuan= true;
+         }
+     } else {
+         namnhuan = true;
+     }
+ }
+ if (namnhuan) {
+     alert(year + "is a leap year");
+ } else {
+     alert(year+ "is NOT leap year")
+ }
+</script>
+</body>
+</html>

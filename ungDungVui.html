@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Vui DoYouLove</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td><h1>Do you love me ?</h1></td>
+    </tr>
+    <tr>
+        <td><button onclick="yes()" id="dongy">Đồng ý</button></td>
+        <td><button id="tbNo" value="No" onmouseout="noHover()" style="position: absolute;">Không</button></td>
+    </tr>
+</table>
+<script>
+    function yes() {
+        alert('Tôi cũng thích bạn');
+    }
+    function noHover() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('tbNo').style.top = x + 'px';
+        document.getElementById('tbNo').style.left = x + 'px';
+    }
+</script>
+</body>
+</html>

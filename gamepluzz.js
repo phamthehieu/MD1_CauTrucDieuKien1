@@ -1,6 +1,6 @@
 let a = 0;
-let b = 0;
-let c = 0;
+let b = 1;
+let c = 2;
 let img1= document.getElementById('img1');
 let img2 = document.getElementById('img2');
 let img3 = document.getElementById('img3');
